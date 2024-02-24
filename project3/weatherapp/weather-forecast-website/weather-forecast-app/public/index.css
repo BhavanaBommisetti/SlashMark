@@ -1,0 +1,122 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f96e6e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Code block styling */
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* WeatherForm styles */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  width: 300px; /* Adjust width as needed */
+}
+
+.input-container img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #3cff00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Add animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to form elements */
+.form-container,
+.button-container {
+  animation: slideIn 0.5s ease-in-out;
+}
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.submit-button,
+.location-button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.location-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.submit-button:hover,
+.location-button:hover {
+  background-color: #45a049;
+}
